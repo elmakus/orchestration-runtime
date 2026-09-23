@@ -1,8 +1,8 @@
 workstream_id = "change-orchestration-prior-art-findings"
 scope_id = "orchestration-runtime-prior-art"
 revision = 1
-state = "ready_for_definition"
+state = "promoted"
 challenge_audit = "green"
 explicit_user_stop = false
-promotion_state = "pending"
-promotion_subject = ""
+promotion_state = "authorized"
+promotion_subject = "orchestration-runtime-prior-art@1"
