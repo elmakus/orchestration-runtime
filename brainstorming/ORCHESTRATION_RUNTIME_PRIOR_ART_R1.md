@@ -3,7 +3,9 @@
 Date: 2026-09-23
 Scope ID: orchestration-runtime-prior-art
 Revision: R1
-Status: tentative
+Status: ready_for_definition
+Definition promotion authorization: pending
+Definition promotion subject: none
 
 ## Goal
 
@@ -438,15 +440,26 @@ R1/R2 source research pinned the upstream implementations; R3 rechecked that the
 | Task capsules should reference required secret/credential bindings but must not embed secret values in prompts or transcripts; values are supplied through runtime/environment channels. | Keep credentials out of model-visible durable text where possible. | User-accepted exploratory choice from grilling round 31. |
 | OR should apply simple redaction against known injected secret values before returning/logging worker output, rather than using an AI-based secret detector. | Deterministic redaction protects known credentials with minimal complexity. | User-accepted exploratory choice from grilling round 31. |
 
-### Unresolved product/architecture decisions
+### Deferred non-blocking Definition/Planning details
 
-- adopt, wrap, fork or reject `pi-extensible-workflows`;
-- build a thinner Pi-native role runtime instead;
-- exact Execution Obligation/Result schema;
-- exact provider/capability adapter model;
-- whether code-mode composition uses pi-fabric, MCP-native scripting or a smaller internal mechanism;
-- whether optional typed classification has enough real volume/value to justify operation;
-- final architecture/name beyond repository identity.
+The completion audit found no remaining material product/strategic blocker to formalization. The following details are intentionally deferred rather than treated as open Brainstorming gates:
+
+- exact Execution Obligation/Result field schema;
+- exact Pi extension/core-library/Paseo adapter API shapes;
+- exact TypeScript types and repository/module layout;
+- exact implementation choice for any reusable substrate pieces such as `pi-extensible-workflows` or pi-fabric, only if Definition/Planning evidence shows they are useful;
+- exact config syntax for roles, tool registry and operational defaults;
+- final naming details beyond the repository identity.
+
+The user explicitly stopped further grilling after round 40. Five subsequent deliberately provocative questions were cancelled before any answer and carry no exploratory decision weight.
+
+### Brainstorming completion audit
+
+- Material goal/scope/architecture/interface/state/failure/security/operations/acceptance surfaces were grilled and reconciled.
+- Capability/tool design was deliberately simplified after overengineering risk was identified: broad role defaults, special treatment only for meaningful risk, simple LLM-assisted tool onboarding with user approval.
+- Final challenge/discovery pass completed; no additional material blocker justified another normal round.
+- Result: `ready_for_definition`.
+- Promotion remains user-owned and is **not** authorized by this completion state.
 
 ## Research status
 
@@ -458,11 +471,15 @@ No Definition/Planning promotion has been authorized.
 
 ## Outcome
 
-- Tentative conclusion: treat the new repository as the home of the provider-neutral execution/orchestration layer, with Project Workflow remaining external authority.
-- Explicit product choices promoted: none.
-- Research still needed before architecture selection: live substrate comparison/prototype after future Definition authorization.
-- Next phase/action: approved transfer scope complete.
+- Brainstorming status: `ready_for_definition`.
+- Exploratory conclusion: use this repository for the orchestration/execution layer, with Project Workflow remaining external governance authority and Paseo/Pi providing the initial execution/control substrate.
+- The recorded choices remain exploratory inputs until Project Definition promotes them into canonical requirements/decisions.
+- No further open-ended Brainstorming or Research is currently required before Definition.
+- Next workflow boundary: user-owned Brainstorming → Project Definition promotion gate.
 - Definition promotion authorization: pending
 - Definition promotion subject: none
+- Deferred cross-repository follow-ups created at Brainstorming close:
+  - `elmakus/chatgpt-codex-project-workflow#56` — clarify internal mutating worker fan-out within one active Card/Execution Obligation.
+  - `elmakus/pi-unraid#3` — verify/globalize Pi repository mutation policy for PW and ad-hoc work.
 
 > Nothing in this file becomes accepted requirement/decision authority by itself.
