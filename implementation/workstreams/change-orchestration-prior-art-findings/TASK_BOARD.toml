@@ -1,15 +1,18 @@
 workstream_id = "change-orchestration-prior-art-findings"
-revision = 2
+revision = 3
 
 [execution_ref]
 branch = "work/orchestration-prior-art-findings"
 
 [[cards]]
 id = "M01-T01"
-status = "in_progress"
+status = "blocked"
 [cards.contract]
 class = "task_card"
 path = "implementation/workstreams/change-orchestration-prior-art-findings/cards/M01-T01.md"
+[cards.blocker]
+class = "blocker"
+path = "implementation/workstreams/change-orchestration-prior-art-findings/BLOCKER_M01_T01.toml"
 
 [[jit_triggers]]
 id = "after-M01-T01"

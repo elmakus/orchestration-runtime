@@ -1,0 +1,5 @@
+workstream_id = "change-orchestration-prior-art-findings"
+card_id = "M01-T01"
+class = "runtime_access_input"
+summary = "M01 local foundations are implemented and locally GREEN, but G1 cannot complete until authorized workstation access is restored for the required Paseo/Pi compatibility, restriction and coordination readback/probes."
+evidence_path = "implementation/workstreams/change-orchestration-prior-art-findings/evidence/M01_T01_RUNTIME_BLOCKER.md"
