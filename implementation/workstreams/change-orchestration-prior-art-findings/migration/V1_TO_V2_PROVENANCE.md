@@ -1,6 +1,6 @@
 # V1 -> V2 pilot migration provenance
 
-Status: STAGED / NOT LIVE
+Status: LIVE / ACTIVATED
 
 ## Exact V1 source
 
@@ -34,6 +34,4 @@ The completed V1 prior-art Research is retained as immutable evidence in Git and
 
 ## Live-owner boundary
 
-This commit is staged on `migration/pwv2-orchestration-prior-art`. It is not live while the original selected branch remains at `636a9ec2b7760fc6a24eddb00319bfff9d583165`.
-
-Activation is only the later verified fast-forward of `work/orchestration-prior-art-findings` to this exact staged commit, after bootstrap/recovery prerequisites are satisfied.
+The original selected branch `work/orchestration-prior-art-findings` was verified at `636a9ec2b7760fc6a24eddb00319bfff9d583165` and then fast-forwarded exactly to staged migration commit `29f228e88006250253ea16cbba7c4e426763d19a` after the user confirmed the V2 ChatGPT Project bootstrap. The migration branch remains only staging/rollback evidence; it is not a second live Project Workflow owner.
