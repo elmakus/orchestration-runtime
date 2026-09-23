@@ -1,0 +1,21 @@
+workstream_id = "change-orchestration-prior-art-findings"
+plan_revision = "P1"
+planning_cycle = 1
+attempt = "R01"
+verdict = "pending"
+evidence_path = ""
+
+[subject]
+class = "git_blob"
+repository = "elmakus/orchestration-runtime"
+commit = "7dc76e5462213a3e6fafb1b782405a4811e7a302"
+path = "planning/ORCHESTRATION_RUNTIME_PLAN_P1.md"
+blob = "1f7f8fe8846cf68cfc47b753cd3be2f7ce0e8881"
+
+[acceptance]
+class = "authority"
+path = "requirements/ORCHESTRATION_RUNTIME_R1.md"
+
+[independence]
+materially_produced_or_repaired_subject = false
+basis = "Fresh independent receiving context entered through the exact premium_B locator and did not materially produce or repair the frozen P1 subject."

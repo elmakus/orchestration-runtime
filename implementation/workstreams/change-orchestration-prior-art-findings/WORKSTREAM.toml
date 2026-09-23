@@ -22,3 +22,7 @@ path = "implementation/workstreams/change-orchestration-prior-art-findings/DEFIN
 [planning]
 class = "planning"
 path = "implementation/workstreams/change-orchestration-prior-art-findings/PLANNING.toml"
+
+[plan_review]
+class = "plan_review"
+path = "implementation/workstreams/change-orchestration-prior-art-findings/PLAN_REVIEW.toml"
