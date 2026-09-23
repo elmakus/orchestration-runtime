@@ -289,6 +289,7 @@ R1/R2 source research pinned the upstream implementations; R3 rechecked that the
 | The human operator should still be able to see each individual Scout/Researcher completion in Paseo even when Main receives an aggregated OR event. | Main efficiency and operator observability are separate concerns. | User-accepted exploratory choice from grilling round 26. |
 | OR should annotate terminal worker/run outcomes through Paseo metadata/labels where practical instead of building a separate GUI status system. | Existing Paseo UI should remain the primary observability surface. | User-accepted exploratory choice from grilling round 26. |
 | Archived completed OR workers should remain discoverable through normal Paseo history/retention while active workspaces/worktrees may be cleaned up. | Diagnostic history is useful even after filesystem isolation is removed. | User-accepted exploratory choice from grilling round 26. |
+| Do not implement a custom OR composer pill/plugin UI in v1; rely on standard Paseo Subagents/history/labels initially, while keeping OR state/query contracts clean enough that a thin Paseo UI plugin can be added later if real mobile usage shows a gap. | Avoid duplicating existing Paseo UI before operator pain is demonstrated, without closing the extension path. | User-accepted exploratory choice from grilling round 26 after explanation. |
 
 ### Unresolved product/architecture decisions
 
