@@ -14,3 +14,7 @@ path = "implementation/workstreams/change-orchestration-prior-art-findings/INTAK
 [brainstorm]
 class = "brainstorm"
 path = "implementation/workstreams/change-orchestration-prior-art-findings/BRAINSTORM.toml"
+
+[definition]
+class = "definition"
+path = "implementation/workstreams/change-orchestration-prior-art-findings/DEFINITION.toml"
