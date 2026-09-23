@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-09-23T00:00:00Z",
+  "paseoVersion": null,
+  "piVersion": null,
+  "minimumPaseoVersion": null,
+  "minimumPiVersion": null,
+  "probes": [
+    { "id": "versions", "required": true, "status": "unknown_unverified", "detail": "Main must read back actual and minimum supported versions.", "evidenceRefs": [] },
+    { "id": "lifecycle_events", "required": true, "status": "unknown_unverified", "detail": "Disposable live probe required.", "evidenceRefs": [] },
+    { "id": "completion_error_attention_events", "required": true, "status": "unknown_unverified", "detail": "Disposable live probe required.", "evidenceRefs": [] },
+    { "id": "reconnect_resume", "required": true, "status": "unknown_unverified", "detail": "Disposable live probe required.", "evidenceRefs": [] },
+    { "id": "tool_restriction", "required": true, "status": "unknown_unverified", "detail": "Restriction mechanism and denial behavior must be proven before active probe.", "evidenceRefs": [] },
+    { "id": "worktree_subbranch", "required": true, "status": "unknown_unverified", "detail": "Read-only capability/probe evidence required.", "evidenceRefs": [] },
+    { "id": "metadata_labels", "required": true, "status": "unknown_unverified", "detail": "Agent metadata/label support requires live evidence.", "evidenceRefs": [] },
+    { "id": "profile_resolution", "required": true, "status": "unknown_unverified", "detail": "Configured inexpensive worker profile must be resolved.", "evidenceRefs": [] },
+    { "id": "execution_placement", "required": true, "status": "unknown_unverified", "detail": "Single-host execution placement must be observed.", "evidenceRefs": [] },
+    { "id": "shared_storage", "required": true, "status": "unknown_unverified", "detail": "Shared-storage visibility across OR/core processes must be proven.", "evidenceRefs": [] },
+    { "id": "atomic_lock_support", "required": true, "status": "unknown_unverified", "detail": "Atomic replacement and exclusive lock support must be proven.", "evidenceRefs": [] },
+    { "id": "failure_behavior", "required": true, "status": "unknown_unverified", "detail": "Bounded negative live probe required.", "evidenceRefs": [] }
+  ]
+}

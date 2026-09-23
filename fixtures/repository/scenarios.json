@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "scenarios": [
+    "green-check",
+    "red-check",
+    "merge-conflict",
+    "isolated-worktree",
+    "immutable-review-subject",
+    "evidence-schema",
+    "post-commit-crash",
+    "transport-cut",
+    "merge-no-readback"
+  ]
+}

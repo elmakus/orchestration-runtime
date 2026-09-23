@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "taskId": "fixture-1",
+  "inputDigest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "status": "completed",
+  "summary": "Fixture completed",
+  "evidenceRefs": ["test/fixtures/valid-worker-result.json"],
+  "checks": [{ "name": "fixture", "status": "passed" }],
+  "changeRefs": ["src/contracts.ts"]
+}

@@ -1,0 +1,18 @@
+{
+  "$id": "https://elmakus.dev/orchestration-runtime/worker-result.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "taskId", "inputDigest", "status", "summary", "evidenceRefs", "checks", "changeRefs"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "taskId": { "type": "string", "minLength": 1 },
+    "inputDigest": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "status": { "enum": ["completed", "blocked", "failed", "stale"] },
+    "summary": { "type": "string", "minLength": 1, "maxLength": 4000 },
+    "evidenceRefs": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "checks": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["name", "status"], "properties": { "name": { "type": "string", "minLength": 1 }, "status": { "enum": ["passed", "failed", "not_run"] }, "detail": { "type": "string" } } } },
+    "changeRefs": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "blocker": { "type": "object", "additionalProperties": false, "required": ["code", "detail"], "properties": { "code": { "type": "string", "minLength": 1 }, "detail": { "type": "string", "minLength": 1 } } },
+    "failure": { "type": "object", "additionalProperties": false, "required": ["code", "detail", "retryable"], "properties": { "code": { "enum": ["retryable_transport", "retryable_provider", "schema_invalid", "permission_denied", "config_invalid", "stale_precondition", "side_effect_uncertain", "runtime_internal", "semantic_error"] }, "detail": { "type": "string", "minLength": 1 }, "retryable": { "type": "boolean" } } }
+  }
+}

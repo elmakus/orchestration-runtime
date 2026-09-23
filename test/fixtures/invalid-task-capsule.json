@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "taskId": "",
+  "role": "admin",
+  "intent": "",
+  "authorityRefs": [],
+  "preconditionDigests": { "authority": "not-a-digest" },
+  "capabilities": ["local_read", "local_read"],
+  "negativeBoundaries": [],
+  "payload": {}
+}

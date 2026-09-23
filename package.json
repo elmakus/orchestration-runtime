@@ -1,0 +1,12 @@
+{
+  "name": "@elmakus/orchestration-runtime",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --experimental-strip-types --test test/*.test.ts",
+    "check": "npm test",
+    "compatibility:check": "node --experimental-strip-types src/compatibilityCli.ts evidence/m01/compatibility-report.json"
+  }
+}

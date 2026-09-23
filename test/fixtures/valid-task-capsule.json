@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "taskId": "fixture-1",
+  "role": "worker",
+  "intent": "Validate deterministic contracts",
+  "authorityRefs": ["requirements/ORCHESTRATION_RUNTIME_R1.md"],
+  "preconditionDigests": { "authority": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" },
+  "capabilities": ["local_read", "local_write", "test_execute"],
+  "negativeBoundaries": ["no external side effects"],
+  "payload": { "kind": "fixture" }
+}
