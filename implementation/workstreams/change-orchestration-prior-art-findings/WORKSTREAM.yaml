@@ -11,12 +11,12 @@ parent_branch: null
 parent_dependency: null
 
 intake:
-  state: "active"
+  state: "complete"
   record: "implementation/workstreams/change-orchestration-prior-art-findings/INTAKE.md"
 
 routing:
-  exploratory_scope: null
-  research_obligation: null
+  exploratory_scope: "brainstorming/ORCHESTRATION_RUNTIME_PRIOR_ART_R1.md"
+  research_obligation: "research/ORCHESTRATION_RUNTIME_PRIOR_ART_R1.md"
   plan_review: null
 
 task_board: null

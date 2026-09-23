@@ -37,3 +37,9 @@ Out of scope:
 ## Durable next route
 
 Create one exploratory record plus one pre-execution Research obligation for the transferred orchestration findings, then reconcile/consume it without promoting to Definition.
+
+## Intake result
+
+- Intake state: complete.
+- Downstream exploratory scope: `brainstorming/ORCHESTRATION_RUNTIME_PRIOR_ART_R1.md`.
+- Active pre-execution Research obligation: `research/ORCHESTRATION_RUNTIME_PRIOR_ART_R1.md`.
