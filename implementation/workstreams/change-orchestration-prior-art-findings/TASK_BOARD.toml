@@ -1,0 +1,18 @@
+workstream_id = "change-orchestration-prior-art-findings"
+revision = 1
+
+[execution_ref]
+branch = "work/orchestration-prior-art-findings"
+
+[[cards]]
+id = "M01-T01"
+status = "ready"
+[cards.contract]
+class = "task_card"
+path = "implementation/workstreams/change-orchestration-prior-art-findings/cards/M01-T01.md"
+
+[[jit_triggers]]
+id = "after-M01-T01"
+after_card = "M01-T01"
+state = "waiting"
+condition = "When M01-T01 is DONE with a durable result, materialize the next stable Card for approved P1 milestone M2 from the predecessor result and current accepted authority."

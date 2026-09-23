@@ -7,22 +7,6 @@ authority = [
   { class = "authority", path = "workflow/PWV2_ADOPTION.md" },
 ]
 
-[intake]
-class = "intake"
-path = "implementation/workstreams/change-orchestration-prior-art-findings/INTAKE.toml"
-
-[brainstorm]
-class = "brainstorm"
-path = "implementation/workstreams/change-orchestration-prior-art-findings/BRAINSTORM.toml"
-
-[definition]
-class = "definition"
-path = "implementation/workstreams/change-orchestration-prior-art-findings/DEFINITION.toml"
-
-[planning]
-class = "planning"
-path = "implementation/workstreams/change-orchestration-prior-art-findings/PLANNING.toml"
-
-[plan_review]
-class = "plan_review"
-path = "implementation/workstreams/change-orchestration-prior-art-findings/PLAN_REVIEW.toml"
+[task_board]
+class = "task_board"
+path = "implementation/workstreams/change-orchestration-prior-art-findings/TASK_BOARD.toml"
