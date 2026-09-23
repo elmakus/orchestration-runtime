@@ -6,7 +6,7 @@ Research question: Transfer and reconcile the runtime-specific findings from the
 ## Durable continuation metadata — chatgpt_only
 
 Research ID: orchestration-runtime-prior-art-r1
-Status: complete
+Status: consumed
 Origin role: brainstorming
 Origin subject: orchestration-runtime-prior-art@R1
 Return target: brainstorming:orchestration-runtime-prior-art@R1
