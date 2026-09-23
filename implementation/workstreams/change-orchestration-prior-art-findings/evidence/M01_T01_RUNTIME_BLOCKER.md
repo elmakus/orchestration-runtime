@@ -10,7 +10,7 @@ That commit contains the provider-neutral TypeScript contracts, deterministic va
 
 ## Deterministic local validation
 
-A clean local copy of the exact implementation content passed:
+The local M01 implementation passed its deterministic test suite:
 
 - `npm test`: 12/12 tests GREEN;
 - deterministic invalid-contract diagnostics;
@@ -18,13 +18,15 @@ A clean local copy of the exact implementation content passed:
 - compatibility-report completeness and fail-closed behavior;
 - fixture scenario inventory.
 
-`npm run compatibility:check` returned a structurally valid report and exit code 2 because required live facts remain unproven. This is the intended fail-closed outcome, not a product-code test failure.
+`npm run compatibility:check` returns a structurally valid report and exit code 2 while required live facts remain unproven. This is the intended fail-closed outcome, not a product-code failure.
 
-## Remaining G1 evidence
+## Actual blocker
 
-The compatibility report intentionally leaves these required subjects `unknown_unverified` until direct readback/probes are possible:
+The target Paseo/Pi deployment has not yet been installed. Therefore G1 cannot truthfully record or prove deployment-specific facts and must remain blocked.
 
-- actual/minimum Paseo and Pi versions;
+The compatibility report intentionally keeps the following required subjects `unknown_unverified` until the deployment exists:
+
+- exact installed Paseo and Pi versions and the initial supported minimum baseline;
 - lifecycle and completion/error/attention events;
 - reconnect/resume behavior;
 - native tool/capability restriction and denial behavior;
@@ -38,12 +40,10 @@ The compatibility report intentionally leaves these required subjects `unknown_u
 
 G1 does not permit fake-only proof or invented values for these required live capabilities.
 
-## Concrete blocker
+## Version policy at resume
 
-The authorized workstation remote-access channel reached its current usage limit after repository synchronization and before the required bounded live probes could be completed. The channel explicitly reports that tool calls are paused.
-
-Some uncommitted scratch M01 files may remain in the workstation checkout from the interrupted direct implementation attempt. Canonical Git on this workstream branch remains authoritative; on access restoration, the checkout must be read back and reconciled against the canonical branch before any further local mutation.
+The planned deployment may use the then-current latest Paseo and Pi releases. At G1, record the exact installed versions as immutable evidence. The initial minimum-supported baseline can be defined from the exact versions actually validated at G1; no legacy-version matrix is required by the accepted scope. Later deployment drift is handled by compatibility/doctor re-probing rather than by assuming every newer version is automatically equivalent.
 
 ## Resume condition
 
-Restore the authorized workstation remote-access channel. Then resume M01-T01, first reconcile the checkout to canonical Git, and perform only the bounded read-only/tool-free compatibility probes permitted by the Card. Required unknown/unsupported facts continue to block dependent live work until proven or correctly classified.
+Resume M01-T01 after Paseo and Pi are deployed and the bounded test-traffic/read-only probe rights described by P1 are available. First reconcile the execution checkout against canonical Git, then perform only the tool-free or strictly read-only G1 probes. Required unknown/unsupported facts continue to block their dependent live outcomes until proven or explicitly re-scoped by the workflow.
