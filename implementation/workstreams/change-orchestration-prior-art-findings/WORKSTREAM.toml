@@ -1,0 +1,16 @@
+kind = "change"
+workstream_id = "change-orchestration-prior-art-findings"
+branch = "work/orchestration-prior-art-findings"
+created_from = "c4130e63760d08c3656552f4a92c479239acbea3"
+integration_target = "main"
+authority = [
+  { class = "authority", path = "workflow/PWV2_ADOPTION.md" },
+]
+
+[intake]
+class = "intake"
+path = "implementation/workstreams/change-orchestration-prior-art-findings/INTAKE.toml"
+
+[brainstorm]
+class = "brainstorm"
+path = "implementation/workstreams/change-orchestration-prior-art-findings/BRAINSTORM.toml"
