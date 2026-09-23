@@ -3,7 +3,7 @@ source_scope_subject = "orchestration-runtime-prior-art@1"
 revision = "R1"
 state = "green"
 completeness_audit = "green"
-premium_a = "due"
+premium_a = "satisfied"
 
 decisions = [
   { class = "authority", path = "decisions/ADR_ORCHESTRATION_RUNTIME_R1.md" },
