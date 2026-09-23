@@ -10,4 +10,4 @@ Project-level identity only.
 
 The selected workstream has accepted Definition authority for the promoted `orchestration-runtime-prior-art@1` scope. Exact requirements, decisions, workflow state and the next legal transition are recovered from workstream-local canonical records rather than from this prose.
 
-Strategic Planning has not yet been authorized past its required Project Workflow premium boundary.
+Premium stop A for exact Definition R1 is satisfied by the user's receiving-context handoff; Strategic Planning cycle 1 (P1) is FROZEN with planner audit GREEN, independent Plan Review pending, not approved for Execution Prep.

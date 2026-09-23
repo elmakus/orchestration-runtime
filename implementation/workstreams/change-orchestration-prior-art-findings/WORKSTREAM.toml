@@ -18,3 +18,7 @@ path = "implementation/workstreams/change-orchestration-prior-art-findings/BRAIN
 [definition]
 class = "definition"
 path = "implementation/workstreams/change-orchestration-prior-art-findings/DEFINITION.toml"
+
+[planning]
+class = "planning"
+path = "implementation/workstreams/change-orchestration-prior-art-findings/PLANNING.toml"

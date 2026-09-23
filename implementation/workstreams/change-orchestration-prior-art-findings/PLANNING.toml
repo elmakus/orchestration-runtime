@@ -1,0 +1,22 @@
+workstream_id = "change-orchestration-prior-art-findings"
+cycle = 1
+entry_subject = "definition:R1|planning-cycle:1"
+revision = "P1"
+state = "frozen"
+planner_audit = "green"
+plan_path = "planning/ORCHESTRATION_RUNTIME_PLAN_P1.md"
+review_mode = "independent"
+review_exemption_basis = ""
+review_exemption_base_subject = ""
+premium_a = "satisfied"
+premium_a_subject = "definition:R1|planning-cycle:1"
+premium_b = "due"
+premium_b_subject = "elmakus/orchestration-runtime@7dc76e5462213a3e6fafb1b782405a4811e7a302:planning/ORCHESTRATION_RUNTIME_PLAN_P1.md@1f7f8fe8846cf68cfc47b753cd3be2f7ce0e8881"
+premium_c = "not_due"
+premium_c_subject = ""
+
+[subject]
+repository = "elmakus/orchestration-runtime"
+commit = "7dc76e5462213a3e6fafb1b782405a4811e7a302"
+path = "planning/ORCHESTRATION_RUNTIME_PLAN_P1.md"
+blob = "1f7f8fe8846cf68cfc47b753cd3be2f7ce0e8881"
