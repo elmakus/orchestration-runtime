@@ -1,0 +1,43 @@
+id: "change-orchestration-prior-art-findings"
+kind: "change"
+status: "discovery"
+
+branch: "work/orchestration-prior-art-findings"
+base_ref: "c4130e63760d08c3656552f4a92c479239acbea3"
+integration_target: "main"
+
+parent_workstream: null
+parent_branch: null
+parent_dependency: null
+
+intake:
+  state: "active"
+  record: "implementation/workstreams/change-orchestration-prior-art-findings/INTAKE.md"
+
+routing:
+  exploratory_scope: null
+  research_obligation: null
+  plan_review: null
+
+task_board: null
+
+authority:
+  requirements: null
+  decisions: []
+  plan: null
+
+review:
+  requirement: null
+  state: null
+  subject: null
+  evidence: null
+  covered_by: null
+
+branch_cleanup:
+  state: null
+  ref: null
+  verified_head: null
+  evidence: null
+
+pr: null
+result: null
